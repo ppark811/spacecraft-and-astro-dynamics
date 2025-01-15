@@ -1,0 +1,187 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5876,        179]
+NotebookOptionsPosition[      5090,        158]
+NotebookOutlinePosition[      5518,        175]
+CellTagsIndexPosition[      5475,        172]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"A", "=", GridBox[{
+     {
+      RowBox[{
+       RowBox[{"Sin", "[", "\[Theta]", "]"}], 
+       RowBox[{"Sin", "[", "\[Phi]", "]"}]}], "0", 
+      RowBox[{"Cos", "[", "\[Phi]", "]"}]},
+     {
+      RowBox[{
+       RowBox[{"Sin", "[", "\[Theta]", "]"}], 
+       RowBox[{"Cos", "[", "\[Phi]", "]"}]}], "0", 
+      RowBox[{"-", 
+       RowBox[{"Sin", "[", "\[Phi]", "]"}]}]},
+     {
+      RowBox[{"Cos", "[", "\[Theta]", "]"}], "1", "0"}
+    }]}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.8714278772822695`*^9, {3.8715855615434394`*^9, 3.8715855807596393`*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"f02e98a3-95ae-4178-88f9-491c7dc63f00"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"b", "=", 
+   TagBox[
+    RowBox[{"\[NoBreak]", GridBox[{
+       {
+        SuperscriptBox["\[Psi]", "\[Prime]",
+         MultilineFunction->None]},
+       {
+        SuperscriptBox["\[Phi]", "\[Prime]",
+         MultilineFunction->None]},
+       {
+        SuperscriptBox["\[Theta]", "\[Prime]",
+         MultilineFunction->None]}
+      },
+      GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.7]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}}], "\[NoBreak]"}],
+    Function[BoxForm`e$, 
+     MatrixForm[BoxForm`e$]]]}], ";"}]], "Input",
+ CellChangeTimes->{{3.871389736940036*^9, 3.871389767476087*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"fd6dca82-6aec-48b5-b30a-13e8fe9096c9"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"c", "=", GridBox[{
+     {
+      SubscriptBox["\[Omega]", "x"]},
+     {
+      SubscriptBox["\[Omega]", "y"]},
+     {
+      SubscriptBox["\[Omega]", "z"]}
+    }]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8713897693635*^9, 3.8713897775357256`*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"3c73775d-244f-4ccc-90bd-e1639c7b2be6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"b", "==", 
+   RowBox[{"FullSimplify", "[", 
+    RowBox[{
+     RowBox[{"Inverse", "[", "A", "]"}], ".", "c"}], "]"}]}], "//", 
+  "MatrixForm"}]], "Input",
+ CellChangeTimes->{{3.871389800331361*^9, 3.871389809189431*^9}, {
+  3.8714275170941124`*^9, 3.8714275568946323`*^9}, {3.8714276023113565`*^9, 
+  3.8714276322959204`*^9}, {3.8714276739897785`*^9, 3.871427728072109*^9}, {
+  3.87142796242857*^9, 3.871428000201948*^9}, {3.871428105360567*^9, 
+  3.8714281129771996`*^9}, {3.8714281550724*^9, 3.8714281835982637`*^9}, {
+  3.8714282401908894`*^9, 3.8714282693080034`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"1e551482-d7e2-437f-b846-eaa3798fa6ce"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      SuperscriptBox["\[Psi]", "\[Prime]",
+       MultilineFunction->None], "}"}], ",", 
+     RowBox[{"{", 
+      SuperscriptBox["\[Phi]", "\[Prime]",
+       MultilineFunction->None], "}"}], ",", 
+     RowBox[{"{", 
+      SuperscriptBox["\[Theta]", "\[Prime]",
+       MultilineFunction->None], "}"}]}], "}"}], "\[Equal]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Csc", "[", "\[Theta]", "]"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"Sin", "[", "\[Phi]", "]"}], " ", 
+          SubscriptBox["\[Omega]", "x"]}], "+", 
+         RowBox[{
+          RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+          SubscriptBox["\[Omega]", "y"]}]}], ")"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{"Cot", "[", "\[Theta]", "]"}]}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"Sin", "[", "\[Phi]", "]"}], " ", 
+           SubscriptBox["\[Omega]", "x"]}], "+", 
+          RowBox[{
+           RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+           SubscriptBox["\[Omega]", "y"]}]}], ")"}]}], "+", 
+       SubscriptBox["\[Omega]", "z"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Cos", "[", "\[Phi]", "]"}], " ", 
+        SubscriptBox["\[Omega]", "x"]}], "-", 
+       RowBox[{
+        RowBox[{"Sin", "[", "\[Phi]", "]"}], " ", 
+        SubscriptBox["\[Omega]", "y"]}]}], "}"}]}], "}"}]}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.8713898103839035`*^9, {3.8714282458053756`*^9, 3.871428270031269*^9}, 
+   3.871585590460023*^9},
+ CellLabel->
+  "Out[4]//MatrixForm=",ExpressionUUID->"98beea8f-8f13-47db-80c0-\
+1c07281aff46"]
+}, Open  ]]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Magnification:>1.4 Inherited,
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"202350c6-76ac-4594-b783-350344082501"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 670, 19, 85, "Input",ExpressionUUID->"f02e98a3-95ae-4178-88f9-491c7dc63f00"],
+Cell[1231, 41, 919, 26, 85, "Input",ExpressionUUID->"fd6dca82-6aec-48b5-b30a-13e8fe9096c9"],
+Cell[2153, 69, 358, 11, 89, "Input",ExpressionUUID->"3c73775d-244f-4ccc-90bd-e1639c7b2be6"],
+Cell[CellGroupData[{
+Cell[2536, 84, 684, 13, 40, "Input",ExpressionUUID->"1e551482-d7e2-437f-b846-eaa3798fa6ce"],
+Cell[3223, 99, 1851, 56, 85, "Output",ExpressionUUID->"98beea8f-8f13-47db-80c0-1c07281aff46"]
+}, Open  ]]
+}
+]
+*)
+

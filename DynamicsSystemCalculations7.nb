@@ -1,0 +1,128 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3889,        120]
+NotebookOptionsPosition[      3409,        104]
+NotebookOutlinePosition[      3841,        121]
+CellTagsIndexPosition[      3798,        118]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BcO", "=", 
+   RowBox[{
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Beta]", "[", "t", "]"}], "]"}], 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Beta]", "[", "t", "]"}], "]"}], "0"},
+       {
+        RowBox[{"-", 
+         RowBox[{"Sin", "[", 
+          RowBox[{"\[Beta]", "[", "t", "]"}], "]"}]}], 
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Beta]", "[", "t", "]"}], "]"}], "0"},
+       {"0", "0", "1"}
+      }], "\[NoBreak]", ")"}], ".", 
+    RowBox[{"(", "\[NoBreak]", GridBox[{
+       {
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Alpha]", "[", "t", "]"}], "]"}], 
+        RowBox[{"-", 
+         RowBox[{"Cos", "[", 
+          RowBox[{"\[Alpha]", "[", "t", "]"}], "]"}]}], "0"},
+       {
+        RowBox[{"Cos", "[", 
+         RowBox[{"\[Alpha]", "[", "t", "]"}], "]"}], 
+        RowBox[{"Sin", "[", 
+         RowBox[{"\[Alpha]", "[", "t", "]"}], "]"}], "0"},
+       {"0", "0", "1"}
+      }], "\[NoBreak]", ")"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8843873089400864`*^9, 3.8843873945328836`*^9}, {
+  3.884387561594496*^9, 3.8843876058712273`*^9}, {3.884387809435296*^9, 
+  3.8843878466814384`*^9}, {3.884472071261491*^9, 3.884472084021818*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"36c26d81-33be-47a7-8ebd-8d5308eb8292"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"O\[Omega]B", "=", 
+   RowBox[{"(", "\[NoBreak]", GridBox[{
+      {
+       RowBox[{
+        RowBox[{"(", "\[NoBreak]", GridBox[{
+           {"0", "0", "1"}
+          }], "\[NoBreak]", ")"}], ".", "BcO", ".", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"Transpose", "[", "BcO", "]"}], ",", "t"}], "]"}], ".", 
+        RowBox[{"(", "\[NoBreak]", GridBox[{
+           {"0"},
+           {"1"},
+           {"0"}
+          }], "\[NoBreak]", ")"}]}]},
+      {
+       RowBox[{
+        RowBox[{"(", "\[NoBreak]", GridBox[{
+           {"1", "0", "0"}
+          }], "\[NoBreak]", ")"}], ".", "BcO", ".", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"Transpose", "[", "BcO", "]"}], ",", "t"}], "]"}], ".", 
+        RowBox[{"(", "\[NoBreak]", GridBox[{
+           {"0"},
+           {"0"},
+           {"1"}
+          }], "\[NoBreak]", ")"}]}]},
+      {
+       RowBox[{
+        RowBox[{"(", "\[NoBreak]", GridBox[{
+           {"0", "1", "0"}
+          }], "\[NoBreak]", ")"}], ".", "BcO", ".", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"Transpose", "[", "BcO", "]"}], ",", "t"}], "]"}], ".", 
+        RowBox[{"(", "\[NoBreak]", GridBox[{
+           {"1"},
+           {"0"},
+           {"0"}
+          }], "\[NoBreak]", ")"}]}]}
+     }], "\[NoBreak]", ")"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8843878611186795`*^9, 3.8843878978645687`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"e198c4ef-83eb-4d10-94a7-23fc87d83274"]
+},
+WindowSize->{1440., 747.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+Magnification:>2.5 Inherited,
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (July 9, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"1c1bd05d-127c-4f05-9d01-486f2cafdd73"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1339, 35, 150, "Input",ExpressionUUID->"36c26d81-33be-47a7-8ebd-8d5308eb8292"],
+Cell[1900, 57, 1505, 45, 438, "Input",ExpressionUUID->"e198c4ef-83eb-4d10-94a7-23fc87d83274"]
+}
+]
+*)
+
